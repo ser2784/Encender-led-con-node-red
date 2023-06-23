@@ -1,11 +1,11 @@
-# Practica ultrasonico con DHT22 Y node-red
+# Practica Encender led con node-red
 Este repositorio muestra como podemos programar una ESP32 con el sensor DHT11.
 
 ## Introducción
 
 ### Descripción
 
-La ```Esp32``` la utilizamos en un entorno de adquision de datos, lo cual en esta practica ocuparemos la platafoma  (```node-red```) para adquirir temperatura y humedad del entorno; Cabe aclarar que esta practica se usara un simulador llamado [WOKWI](https://https://wokwi.com/). y plataforma [node-red] (http://localhost:1880/ui/#!/0?socketid=GastYhmOZGDVaQArAAAN)
+La ```Esp32``` la utilizamos en un entorno de adquision de datos, lo cual en esta practica ocuparemos la platafoma  (```node-red```) para apoder encender un led; Cabe aclarar que esta practica se usara un simulador llamado [WOKWI](https://https://wokwi.com/). y plataforma [node-red] (http://localhost:1880/ui/#!/0?socketid=GastYhmOZGDVaQArAAAN)
 
 
 ## Material Necesario
@@ -16,7 +16,7 @@ Para realizar esta practica necesitas lo siguiente
 - [node-red] (http://localhost:1880/ui/#!/0?socketid=GastYhmOZGDVaQArAAAN)
 - [node-red] (http://localhost:1880/#flow/33551a14c9f5e89f)
 - Tarjeta ESP 32
-- Sensor DHT22
+- Relay Module
 
 
 
@@ -116,24 +116,26 @@ void callback(char* topic, byte* payload, unsigned int length) {
 ```
 2. Ingresamos a la plataforma **node-red** y acemos el diagrama como se muestra en la siguente imagen.
 
-![](https://github.com/ser2784/Practica-esp32-con-node-red/blob/main/Practica%20esp32%20con%20node-red%20diagrama%201.png)
+![](https://github.com/ser2784/Encender-led-con-node-red/blob/main/Encender%20led%20con%20node-red%20diagrma.png)
 
 3. Hacer la conexion de **node-red** con la **ESP32** como se muestra en la siguente imagen.
 
-![]()
+![](https://github.com/ser2784/Encender-led-con-node-red/blob/main/Encender%20led%20con%20node-red%20apagado.png)
 
 ### Instrucciónes de operación
 
 1. Iniciar simulador.
 2. Visualizar los datos en el monitor serial.
-3. Colocar la temperatura y humedad dando *doble click* al sensor **DHT22** 
+3. Colocar la temperatura y humedad dando *un click* al sensor **Realy Module** 
 
 ## Resultados
 
-Cuando haya funcionado, verás los valores dentro del monitor serial como se muestra en la siguente imagen.
+Cuando haya funcionado, verás en el  monitor apagado el boton como se muestra en la siguente imagen.
 
-![](https://github.com/ser2784/Practica-esp32-con-node-red/blob/main/Practica%20esp32%20con%20node-red%20graficos.png)
-![](https://github.com/ser2784/Practica-esp32-con-node-red/blob/main/Practica%20esp32%20con%20node-red%20diagrama.png)
+![](https://github.com/ser2784/Encender-led-con-node-red/blob/main/Encender%20led%20con%20node-red%20apagado.png)
+
+Posterior dando un *clic al boton* encendera como se muestra en la imagen.
+![](https://github.com/ser2784/Encender-led-con-node-red/blob/main/Encender%20led%20con%20node-red%20encendido.png)
 
 
 
